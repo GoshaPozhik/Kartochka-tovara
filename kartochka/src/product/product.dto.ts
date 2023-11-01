@@ -9,13 +9,11 @@ export class CreateProductDto {
     @IsNotEmpty()
     price: number;
 
-    @IsNumber()
-    @IsNotEmpty()
-    id: number;
-
     @IsString()
     @IsNotEmpty()
     description: string;
+
+    category: string;
   }
   
   export class UpdateProductDto {
@@ -27,11 +25,9 @@ export class CreateProductDto {
     @IsNotEmpty()
     price: number;
 
-    @IsNumber()
-    @IsNotEmpty()
-    id: number;
-
     @IsString()
     @IsNotEmpty()
     description: string;
+
+    category: string;
   }

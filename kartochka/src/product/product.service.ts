@@ -7,8 +7,8 @@ import { Product } from '@prisma/client';
 export class ProductService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async createProduct(сreateProductDto: CreateProductDto) {
-    return this.prisma.product.create({data: сreateProductDto});
+  async createProduct(createProductDto: CreateProductDto) {
+    return this.prisma.product.create({ data: createProductDto });
   }
 
   async getAllProducts() {
